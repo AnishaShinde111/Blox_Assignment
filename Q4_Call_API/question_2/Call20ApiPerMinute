@@ -1,0 +1,4 @@
+In a situation where API needs to be called 20 time per minute, following approach can be followed:
+- Queue all calls and delay the last 5 to the next minute.
+- Using this way penalty of an extra minute can be avoided.
+- Implement a Task Scheduler to execute calls in batches of 15 per minute.
